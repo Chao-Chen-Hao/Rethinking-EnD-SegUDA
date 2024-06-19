@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Rethinking Ensemble-Distillation for Semantic Segmentation Based Unsupervised Domain Adaptation">
+  <meta name="keywords" content="Unsupervised Domain Adaptation, Semantic Segmentation, Ensemble-Distillation">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rethinking Ensemble-Distillation for Semantic Segmentation Based Unsupervised Domain Adaptation</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/re.png" type="image/x-icon">
+  <link rel="stylesheet" href="./static/css/custumize.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+  </script>
+  <script type="text/javascript"
+    src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+
+</head>
+
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Rethinking Ensemble-Distillation for Semantic Segmentation Based Unsupervised Domain Adaptation</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://chen-hao-chao.github.io/">Chen-Hao Chao</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://profiles.stanford.edu/bo-wun-cheng">Bo-Wun Cheng</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://elsalab.ai/about">Chun-Yi Lee</a>,
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">National Tsing Hua University</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2104.14203"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Journal Link. -->
+              <span class="link-block">
+                <a href="https://dl.acm.org/doi/10.1109/TPAMI.2023.3289308"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-ieee"></i>
+                  </span>
+                  <span>Journal</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=Ep9VXNt72m4"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/chen-hao-chao/Rethinking-EnD-SegUDA"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+          </div>
+
+          <div class="column has-text-centered">
+            &#9654 <b>Keywords: </b>
+            <!-- <div class="w3-tag w3-round w3-blue" style="padding:3px"> -->
+              <div class="w3-tag w3-round w3-blue w3-border w3-border-white">
+                Unsupervised Domain Adaptation
+              </div>
+            <!-- </div> -->
+            <!-- <div class="w3-tag w3-round w3-blue" style="padding:3px"> -->
+              <div class="w3-tag w3-round w3-blue w3-border w3-border-white">
+                Semantic Segmentation
+              </div>
+            <!-- </div> -->
+            <!-- <div class="w3-tag w3-round w3-blue" style="padding:3px"> -->
+              <div class="w3-tag w3-round w3-blue w3-border w3-border-white">
+                Ensemble-Distillation
+              </div>
+            <!-- </div> -->
+            </br>
+            <div class="w3-bar w3-border w3-light-grey" style="height:10px; visibility:hidden;"></div>
+            &#9654 <b>Venue: </b>
+            <!-- <div class="w3-tag w3-round w3-dark-grey" style="padding:3px"> -->
+              <div class="w3-tag w3-round w3-dark-grey w3-border w3-border-white">
+                IEEE/CVF Computer Vision and Pattern Recognition Conference Workshop (CVPRW 2021)
+              </div>
+            <!-- </div> -->
+            <div class="w3-bar w3-border w3-light-grey" style="height:10px; visibility:hidden;"></div>
+            &#9654 <b>Journal Extension: </b>
+            <!-- <div class="w3-tag w3-round w3-dark-grey" style="padding:3px"> -->
+              <div class="w3-tag w3-round w3-dark-grey w3-border w3-border-white">
+                IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)
+              </div>
+            <!-- </div> -->
+          </div>
+          </br>
+          <div class="w3-bar w3-border w3-light-grey"></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified scroll-wrapper">
+          Recent researches on unsupervised domain adaptation (UDA) have demonstrated that 
+          end-to-end ensemble learning frameworks serve as a compelling option for UDA tasks. 
+          Nevertheless, these end-to-end ensemble learning methods often lack flexibility as 
+          any modification to the ensemble requires retraining of their frameworks. To address 
+          this problem, we propose a flexible ensemble-distillation framework for performing 
+          semantic segmentation based UDA, allowing any arbitrary composition of the members 
+          in the ensemble while still maintaining its superior performance. To achieve such 
+          flexibility, our framework is designed to be robust against the output inconsistency 
+          and the performance variation of the members within the ensemble. To examine the 
+          effectiveness and the robustness of our method, we perform an extensive set of 
+          experiments on both GTA5 to Cityscapes and SYNTHIA to Cityscapes benchmarks to 
+          quantitatively inspect the improvements achievable by our method. We further 
+          provide detailed analyses to validate that our design choices are practical and 
+          beneficial. The experimental evidence validates that the proposed method indeed 
+          offer superior performance, robustness and flexibility in semantic segmentation 
+          based UDA tasks against contemporary baseline methods.
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/Ep9VXNt72m4"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div></br>
+    <!--/ Paper video. -->
+    <div class="w3-bar w3-border w3-light-grey"></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title" style="text-indent: -0.35em;">Poster</h2>
+    <div class="columns is-centered has-text-centered">
+      <div class="content has-text-justified scroll-wrapper">
+        <p class="has-text-centered" style="font-style: italic;"><embed src="./static/images/CVPRW21-poster.pdf" width="980pt" height="550pt"></p>
+      </div>
+    </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@InProceedings{Chao_2021_CVPR,
+    author    = {Chao, Chen-Hao and Cheng, Bo-Wun and Lee, Chun-Yi},
+    title     = {Rethinking Ensemble-Distillation for Semantic Segmentation Based Unsupervised Domain Adaption},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
+    month     = {June},
+    year      = {2021},
+    pages     = {2610-2620}
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            The template of this page is based on the
+            <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> website.
+            You are free to borrow the <a href="https://github.com/chen-hao-chao/dlsm">code</a> of this website,
+            we just ask that you link back to this page in the footer.
+            Please remember to remove the analytics code included in the header of the website which
+            you do not want on your website.
+          </p>
+          <p>
+            This website is licensed under a <a rel="license"
+              href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+              Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
